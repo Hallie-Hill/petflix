@@ -84,7 +84,7 @@ img {
     /* align-items: center; */
     text-align: center;
     margin: auto;
-    margin-top: 6rem;
+    /* margin-top: 6rem; */
 }
 
 .hero .text h1 {
@@ -122,6 +122,12 @@ img {
     
 }
 
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+
 .email-container a {
     width:30%;
 }
@@ -142,6 +148,69 @@ img {
     flex:1;
 }
 
+.card h1 {
+    font-size: 3.125rem;
+    margin-bottom: 1rem;
+}
+
+.card h2 {
+    font-size: 1.625;
+    font-weight: 400;
+}
+
+@media (max-width:768px) {
+    .card .container {
+        flex-direction: column;
+        text-align: center;
+
+    }
+    .card .container .text {
+        order: 1;
+        z-index: 3;
+    }
+
+    .card .container .image {
+        margin-top: -2rem;
+        order: 2;
+    }
+
+    .card h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .card h2 {
+        font-size:1.25;
+        font-weight: 400;
+    }
+}
+
+
+
 section {
     border-bottom: 8px solid #333;
+}
+
+footer {
+    padding: 2rem 3rem;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer .footer-link-item {
+    display: inline-block;
+    width: 24.5%;
+}
+
+@media(max-width: 768px) {
+    footer .footer-link-item {
+        width: 32.5%;
+    }
+}
+
+footer .footer-link-item a {
+    color:white;
+    text-decoration: none;
 }
