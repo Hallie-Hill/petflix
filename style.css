@@ -187,10 +187,48 @@ section {
     border-bottom: 8px solid #333;
 }
 
+.faq {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    padding-left: 45px;
+    padding-right: 45px;
+}
 
+.faq h1 {
+    font-size: 3.125rem;
+    line-height: 1.1;
+    margin-bottom: 0.5rem; 
+}
 
 .faq ul {
     list-style: none;
+}
+
+.faq-list {
+    list-style: none;
+    width: 60%;
+    margin: 1.25rem;
+}
+
+.faq-list-item {
+    margin: 0 0 8px;
+}
+
+.faq-list button {
+    background: #303030;
+    color: white;
+    width: 100%;
+    text-align: left;
+    font-size: 30px;
+    border: 0;
+    font-weight: 400;
+    margin-bottom: 1px;
+    padding: 0.8em 2.2em 0.8em 1.2em;
+    position: relative;
+    width: 100%;
 }
 
 .faq-answer {
@@ -202,6 +240,33 @@ section {
 
 .faq-answer.closed {
     max-height: 0;
+}
+
+.signup-title {
+    padding-top: 13.6px;
+    padding-bottom: 20px;
+}
+
+.email-container2 {
+    width: 100%;
+    display: flex;
+    margin-bottom: ;
+}
+
+.email-container2 input {
+    width: 100%;
+    font-size:1.625rem;
+    border-radius: 2px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    padding: 10px 10px 0;
+    appearance: none;
+    border: 1px solid #8c8c8c;
+    
+}
+
+.email-container2 a {
+    width:30%;
 }
 
 footer {
@@ -223,9 +288,17 @@ footer .footer-link-item {
     }
 }
 
+.footer-title {
+    color: #737373;
+    margin: 0 0 30px;
+}
+
+.footer-title a {
+    color: #737373;
+}
+
 footer .footer-link-item a {
-    /* color:#737373; */
-    color: white;
+    color:#737373;
     text-decoration: none;
 }
 
